@@ -83,7 +83,10 @@ class player():
 
 # drawing the game window
 def gameWindow(boxes, noughts, crosses):
+    # giving the game window a pastel green background
     win.fill((209, 255, 224))
+
+    # displaying the game title
     font = pygame.font.SysFont("Arial", 30)
     text = font.render("Katie's Noughts And Crosses Game", 1, (62, 180, 137))
     win.blit(text, (300, 60))
