@@ -1,7 +1,7 @@
 import pygame
 pygame.init()
 
-# creates a window with a pastel green background
+# creates the game window
 win = pygame.display.set_mode((1000, 600))
 pygame.display.set_caption("Noughts and Crosses")
 
