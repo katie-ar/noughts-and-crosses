@@ -91,7 +91,7 @@ def gameWindow(boxes, noughts, crosses):
     text = font.render("Katie's Noughts And Crosses Game", 1, (62, 180, 137))
     win.blit(text, (300, 60))
     
-    # checking who is playing/who won/if there was a draw
+    # displaying who is playing/who won/if there was a draw
     if noughts.playing:
         text = font.render("O's turn", 1, (62, 180, 137))
         win.blit(text, (450, 150))
