@@ -5,7 +5,7 @@ pygame.init()
 win = pygame.display.set_mode((1000, 600))
 pygame.display.set_caption("Noughts and Crosses")
 
-# box object
+# each square in the game grid will be an object of this class
 class box():
     # initialisation
     def __init__(self, x_pos, y_pos):
@@ -36,7 +36,7 @@ class box():
             else:
                 return "No player"
 
-# player object
+# there will an object of this class for the noughts player and for the crosses player
 class player():
     # initialisation
     def __init__(self, name, playing):
