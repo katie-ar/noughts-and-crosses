@@ -50,31 +50,30 @@ class player():
 
     # checking if the player has won
     def checkWon(self):
-        array = self.boxesClicked
-        if array.count(0) == 1:
-            if array.count(1) == 1 and array.count(2) == 1:
+        if self.boxesClicked.count(0) == 1:
+            if self.boxesClicked.count(1) == 1 and self.boxesClicked.count(2) == 1:
                 self.winner = True
-            elif array.count(3) == 1 and array.count(6) == 1:
+            elif self.boxesClicked.count(3) == 1 and self.boxesClicked.count(6) == 1:
                 self.winner = True
-            elif array.count(4) == 1 and array.count(8) == 1:
-                self.winner = True
-
-        if array.count(2) == 1:
-            if array.count(5) == 1 and array.count(8) == 1:
-                self.winner = True
-            elif array.count(4) == 1 and array.count(6) == 1:
+            elif self.boxesClicked.count(4) == 1 and self.boxesClicked.count(8) == 1:
                 self.winner = True
 
-        if array.count(4) == 1:
-            if array.count(1) == 1 and array.count(7) == 1:
+        if self.boxesClicked.count(2) == 1:
+            if self.boxesClicked.count(5) == 1 and self.boxesClicked.count(8) == 1:
                 self.winner = True
-            elif array.count(3) == 1 and array.count(5) == 1:
+            elif self.boxesClicked.count(4) == 1 and self.boxesClicked.count(6) == 1:
                 self.winner = True
 
-        if array.count(6) == 1 and array.count(7) == 1 and array.count(8) == 1:
+        if self.boxesClicked.count(4) == 1:
+            if self.boxesClicked.count(1) == 1 and self.boxesClicked.count(7) == 1:
+                self.winner = True
+            elif self.boxesClicked.count(3) == 1 and self.boxesClicked.count(5) == 1:
+                self.winner = True
+
+        if self.boxesClicked.count(6) == 1 and self.boxesClicked.count(7) == 1 and self.boxesClicked.count(8) == 1:
             self.winner = True
 
-    # updating the array of the boxes the player has clicked
+    # updating the list of the boxes the player has clicked
     def setClickedBoxes(self, boxes):
         self.boxesClicked = []
         for i in range(0, 9):
